@@ -65,3 +65,9 @@ Aplikasi dibangun menggunakan kombinasi **11 Activity**, **ViewPager2 + 4 Fragme
 ---
 
 ## 🚀 Cara Menjalankan Proyek
+
+1. *Clone* repository ini ke komputer lokal:
+   `git clone https://github.com/username-kamu/JejakRasa.git`
+2. Buka proyek menggunakan **Android Studio**.
+3. Pastikan file konfigurasi `google-services.json` dari proyek Firebase milikmu sudah berada di dalam direktori `app/`.
+4. Tunggu proses **Gradle Sync** selesai, lalu klik **Run (`▶`)** untuk menjalankan aplikasi di emulator atau perangkat Android (minimal Android 11 / API 30).
