@@ -1,0 +1,58 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Lingkaran Latar Terakota -->
+    <path
+        android:fillColor="#9A3412"
+        android:pathData="M54,6 A48,48 0 1,1 54,102 A48,48 0 1,1 54,6 Z" />
+
+    <!-- Garis Cincin Emas Hangat -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,11 A43,43 0 1,1 54,97 A43,43 0 1,1 54,11 Z"
+        android:strokeColor="#FBBF24"
+        android:strokeWidth="2" />
+
+    <!-- Siluet Pin Lokasi (Jejak) -->
+    <path
+        android:fillColor="#FFFBF5"
+        android:pathData="M54,23 C41.8,23 32,32.8 32,45 C32,60.5 54,84 54,84 C54,84 76,60.5 76,45 C76,32.8 66.2,23 54,23 Z" />
+
+    <!-- Sumpit / Sendok Aksen Emas -->
+    <path
+        android:fillColor="#D97706"
+        android:pathData="M43,43.5 L65,41 L65.5,42.8 L43.5,45.2 Z" />
+
+    <!-- Mangkuk Kuliner (Rasa) -->
+    <path
+        android:fillColor="#9A3412"
+        android:pathData="M41,46 L67,46 C67,53.2 61.2,58 54,58 C46.8,58 41,53.2 41,46 Z" />
+
+    <!-- Kaki Mangkuk -->
+    <path
+        android:fillColor="#9A3412"
+        android:pathData="M49,58.5 L59,58.5 L58,61 L50,61 Z" />
+
+    <!-- Uap Hangat Kuliner -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48,40 C46.5,38 49.5,36 48,33.5"
+        android:strokeColor="#D97706"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.2" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,39 C52.5,36.5 55.5,34.5 54,31.5"
+        android:strokeColor="#9A3412"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.2" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M60,40 C58.5,38 61.5,36 60,33.5"
+        android:strokeColor="#D97706"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.2" />
+</vector>

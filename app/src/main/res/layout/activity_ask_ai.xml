@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cream"
+    tools:context=".ui.AskAiActivity">
+
+    <!-- HEADER ATAS -->
+    <LinearLayout
+        android:id="@+id/layoutAiHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary_terracotta"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="14dp">
+
+        <TextView
+            android:id="@+id/btnBackAi"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_back_pill"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingHorizontal="14dp"
+            android:text="‹ Kembali"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Kurator Kuliner AI"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terhubung Live ke Katalog JejakRasa"
+                android:textColor="#FED7AA"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- SARAN PERTANYAAN CEPAT -->
+    <HorizontalScrollView
+        android:id="@+id/scrollSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutAiHeader"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="6dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSuggestHelp"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Bisa bantu apa?"
+                android:textColor="@color/primary_terracotta"
+                android:textSize="12sp"
+                app:strokeColor="@color/primary_terracotta" />
+
+            <Button
+                android:id="@+id/btnSuggestJakarta"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Kuliner Jakarta?"
+                android:textColor="@color/primary_terracotta"
+                android:textSize="12sp"
+                app:strokeColor="@color/primary_terracotta" />
+
+            <Button
+                android:id="@+id/btnSuggestBudget"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Budget di bawah 30rb?"
+                android:textColor="@color/primary_terracotta"
+                android:textSize="12sp"
+                app:strokeColor="@color/primary_terracotta" />
+
+            <Button
+                android:id="@+id/btnSuggestCoffee"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Kopi &amp; Jajanan?"
+                android:textColor="@color/primary_terracotta"
+                android:textSize="12sp"
+                app:strokeColor="@color/primary_terracotta" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- AREA OBROLAN -->
+    <ScrollView
+        android:id="@+id/scrollChatAi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutInputAi"
+        android:layout_below="@id/scrollSuggestions"
+        android:clipToPadding="false"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:id="@+id/layoutChatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- KOLOM KETIK BAWAH (OTOMATIS NAIK MENGIKUTI KEYBOARD) -->
+    <LinearLayout
+        android:id="@+id/layoutInputAi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etPromptAi"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_bar"
+            android:hint="Tanya rekomendasi kuliner..."
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSendAi"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:backgroundTint="@color/primary_terracotta"
+            android:text="Kirim"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

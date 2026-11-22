@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet Warna Utama JejakRasa -->
+    <color name="primary_terracotta">#9A3412</color>
+    <color name="primary_dark">#7C2D12</color>
+    <color name="accent_amber">#B45309</color>
+    <color name="accent_gold">#D97706</color>
+    <color name="bg_cream">#FFFBF5</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="badge_green_bg">#ECFDF5</color>
+    <color name="badge_green_text">#047857</color>
+    <color name="divider_warm">#F3E8D8</color>
+</resources>
